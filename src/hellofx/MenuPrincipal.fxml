@@ -5,14 +5,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.Controller">
     <children>
-      <ImageView fitHeight="900.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true" scaleY="1.2">
+      <ImageView fitHeight="900.0" fitWidth="900.0" onDragDetected="#handleArretButtonAction" pickOnBounds="true" preserveRatio="true" scaleY="1.2">
          <image>
             <Image url="@resources/graphic/background.png" />
          </image>
       </ImageView>
-      <Button mnemonicParsing="false" scaleX="0.9" scaleY="0.9" scaleZ="0.5" translateX="-200.0" translateY="50.0">
+      <Button mnemonicParsing="false" onAction="#handleModeAutomatiqueButtonAction" scaleX="0.9" scaleY="0.9" scaleZ="0.5" translateX="-200.0" translateY="50.0">
          <graphic>
             <ImageView fitHeight="164.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true" scaleX="1.1" scaleY="1.1">
                <image>
@@ -21,7 +21,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="309.0" layoutY="229.0" mnemonicParsing="false" scaleX="0.9" scaleY="0.9" translateX="200.0" translateY="50.0">
+      <Button layoutX="309.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleModeManuelButtonAction" scaleX="0.9" scaleY="0.9" translateX="200.0" translateY="50.0">
          <graphic>
             <ImageView fitHeight="164.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true" scaleX="1.1" scaleY="1.1">
                <image>
@@ -30,7 +30,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button mnemonicParsing="false" scaleX="0.7" scaleY="0.7" translateY="230.0">
+      <Button mnemonicParsing="false" onAction="#handleArretButtonAction" scaleX="0.7" scaleY="0.7" translateY="230.0">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.2">
                <image>
