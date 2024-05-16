@@ -2,13 +2,15 @@ package hellofx;
 
 import java.net.URL;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;  
+import javafx.scene.Parent; 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
 
 public class Main extends Application {
 
@@ -27,7 +29,10 @@ public class Main extends Application {
         Scene sceneMenuPrincipal = new Scene(rootMenuPrincipal);
         Scene sceneModeAutomatique = new Scene(rootModeAutomatique);
 
-        int numeroScene = 1;
+        int numeroScene = 0;
+        fenetre.setScene(sceneMenuPrincipal);
+
+        
 
         switch(numeroScene) {
             case 0 :
@@ -42,12 +47,14 @@ public class Main extends Application {
         fenetre.setResizable(false);
 
         fenetre.show();
+        
 
     }
 
-    // inplémentation du fichier FXML (langage à balise)
+    // implémentation du fichier FXML (langage à balise)
 
     public static void main(String[] args) {
         launch(args);
     }
+
 }
