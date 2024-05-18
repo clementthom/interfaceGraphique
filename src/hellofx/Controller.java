@@ -24,6 +24,10 @@ public class Controller {
      * 4. Violet
      */
 
+    public int retournerValeurBouton() {
+        System.out.println(boutonClique);
+        return boutonClique;
+    }
 
     //on lance la video d'introduction puis on 
     public void initialisation(URL location, ResourceBundle resources) throws IOException{
@@ -113,16 +117,20 @@ public class Controller {
     @FXML
     public void handleRougeButtonAction(ActionEvent e) throws IOException{
         boutonClique = 1;
+        System.out.println(this.boutonClique);
     }
     @FXML
     public void handleJauneButtonAction(ActionEvent e) throws IOException{
         boutonClique = 2;
+        System.out.println(this.boutonClique);
     }
     @FXML
     public void handleBleuButtonAction(ActionEvent e) throws IOException{
         boutonClique = 3;
+        System.out.println(this.boutonClique);
     }
     public void handleVioletButtonAction(ActionEvent e) throws IOException{
         boutonClique = 4;
+        System.out.println(this.boutonClique);
     }
 }
