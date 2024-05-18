@@ -17,7 +17,12 @@ import javafx.event.ActionEvent;
 public class Controller {
 
     Stage fenetre = new Stage();
-    int boutonClique = 0;
+    private int boutonClique = 0;
+    /* 1. Rouge
+     * 2. Jaune
+     * 3. Bleu
+     * 4. Violet
+     */
 
 
     //on lance la video d'introduction puis on 
@@ -29,18 +34,8 @@ public class Controller {
         Scene sceneInitialisation = new Scene(rootInitialisation);
         fenetre.setScene(sceneInitialisation);
 
-        
-
-        
-        
-
-        
-
-
-
         fenetre.setMaximized(true);
         fenetre.setResizable(false);
-
         fenetre.show();
     }
     
@@ -115,8 +110,19 @@ public class Controller {
     //on réutilise la méthode du bouton d'arrêt 
 
     //plan mode manuel
-    /*@FXML
-    public void handleRetourButtonAction(ActionEvent e) throws IOException{
-        afficherMenuPrincipal(e);//même méthode pour le mode manuel
-    }*/
+    @FXML
+    public void handleRougeButtonAction(ActionEvent e) throws IOException{
+        boutonClique = 1;
+    }
+    @FXML
+    public void handleJauneButtonAction(ActionEvent e) throws IOException{
+        boutonClique = 2;
+    }
+    @FXML
+    public void handleBleuButtonAction(ActionEvent e) throws IOException{
+        boutonClique = 3;
+    }
+    public void handleVioletButtonAction(ActionEvent e) throws IOException{
+        boutonClique = 4;
+    }
 }
