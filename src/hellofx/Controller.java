@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.scene.Parent; 
 import javafx.scene.Scene;
@@ -16,17 +17,26 @@ import javafx.event.ActionEvent;
 public class Controller {
 
     Stage fenetre = new Stage();
-    int boutonCliqué = 0;
+    int boutonClique = 0;
 
 
     //on lance la video d'introduction puis on 
-    public void initialisation() throws IOException{
+    public void initialisation(URL location, ResourceBundle resources) throws IOException{
         fenetre.close();
         URL resourceInitialisation = getClass().getResource("Initialisation.fxml");
         Parent rootInitialisation = FXMLLoader.load(resourceInitialisation);
         
-        Scene sceneMenuPrincipal = new Scene(rootInitialisation);
-        fenetre.setScene(sceneMenuPrincipal);
+        Scene sceneInitialisation = new Scene(rootInitialisation);
+        fenetre.setScene(sceneInitialisation);
+
+        
+
+        
+        
+
+        
+
+
 
         fenetre.setMaximized(true);
         fenetre.setResizable(false);
@@ -103,4 +113,10 @@ public class Controller {
         afficherMenuPrincipal(e);//même méthode pour le mode manuel
     }
     //on réutilise la méthode du bouton d'arrêt 
+
+    //plan mode manuel
+    /*@FXML
+    public void handleRetourButtonAction(ActionEvent e) throws IOException{
+        afficherMenuPrincipal(e);//même méthode pour le mode manuel
+    }*/
 }
