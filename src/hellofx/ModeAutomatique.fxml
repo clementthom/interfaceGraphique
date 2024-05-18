@@ -7,14 +7,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.Controller">
    <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="3.0" scaleY="3.6">
          <image>
             <Image url="@resources/graphic/background.png" />
          </image>
       </ImageView>
-      <Button mnemonicParsing="false" translateY="30.0">
+      <Button mnemonicParsing="false" onAction="#handleRetourButtonAction" translateY="30.0">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.2">
                <image>
@@ -23,9 +23,9 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button mnemonicParsing="false" scaleX="0.7" scaleY="0.7" translateX="200.0" translateY="130.0">
+      <Button mnemonicParsing="false" onAction="#handleArretButtonAction" scaleX="0.45" scaleY="0.45" translateX="200.0" translateY="130.0">
          <graphic>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.2" scaleZ="0.5">
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0" scaleZ="0.5">
                <image>
                   <Image url="@resources/graphic/StopButton.png" />
                </image>

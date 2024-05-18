@@ -30,9 +30,9 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button mnemonicParsing="false" onAction="#handleArretButtonAction" scaleX="0.7" scaleY="0.7" translateY="230.0">
+      <Button mnemonicParsing="false" onAction="#handleArretButtonAction" scaleX="0.45" scaleY="0.45" translateY="230.0">
          <graphic>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.2">
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0">
                <image>
                   <Image url="@resources/graphic/StopButton.png" />
                </image>
